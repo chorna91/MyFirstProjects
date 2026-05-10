@@ -4,6 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int result1 = SafeParser.parseAndAdd("10","5");
+        System.out.println(result1);
+
+        int result2 = SafeParser.parseAndAdd("10","x");
+        System.out.println(result2);
+
+        int result3 = SafeParser.parseAndAdd("x","y");
+        System.out.println(result3);
+
+
+
         //масив базового типу (поліморфізм)
         Shape[] shapes = new Shape[]{
                 new Circle(5);
