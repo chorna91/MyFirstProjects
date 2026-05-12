@@ -1,4 +1,7 @@
+//todo: Краще так класи не називати, оскільки зявляються питання,
+// чому саме він Save і що саме він парсить. краще StringUtil
 public class SafeParser {
+    //todo: логічніше назвати parseAndSum
     public static int parseAndAdd(String a, String b){
         try{
             int first = Integer.parseInt(a.trim());

@@ -1,18 +1,16 @@
 public class Rectangle extends Shape {
-
     private final double width;
-    private final double heigth;
+    private final double heigth; //todo height
 
-    public Rectangle(double width, double heigth) {
+    public Rectangle(double width, double heigth) { //todo height
         super("Rectangle");
 
-        if (width <=0 || heigth <=0){
+        if (width <= 0 || heigth <= 0){
             throw new IllegalArgumentException("Width and height must be > 0");
         }
-        this.width=width;
-        this.heigth=heigth;
+        this.width = width;
+        this.heigth = heigth;
     }
-
 
     @Override
     public double area() {

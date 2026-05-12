@@ -1,6 +1,6 @@
-
 public class ArrayStats {
     //метод валидації даних масиву
+    //todo: приватні методи прийнято опускати в низ класу (під публічні)
      private static void validateArray(int[] arr){
          if (arr == null || arr.length ==0 ){
              //контракт методу
@@ -9,7 +9,7 @@ public class ArrayStats {
      }
 
     public static void printArray(int[] arr){
-         validateArray(arr);
+        validateArray(arr);
        //для кожного елемента масиву arr покласті значення в змінну num та print його з пробілом
         for (int num : arr){
             System.out.print(num + " ");
@@ -53,7 +53,7 @@ public class ArrayStats {
         //вертається значення ділення суми на килькисть елементів в масиві
         return (double) sum(arr) / arr.length;
     }
-    public static void printEvenOddCount (int[] arr){
+    public static void printEvenOddCount(int[] arr){
          validateArray(arr);
         //створюється 2 лічильника
          int even = 0;
@@ -70,6 +70,6 @@ public class ArrayStats {
              }
          }
          System.out.println("Even: " + even);
-        System.out.println("Odd: " + odd);
+         System.out.println("Odd: " + odd);
     }
 }
